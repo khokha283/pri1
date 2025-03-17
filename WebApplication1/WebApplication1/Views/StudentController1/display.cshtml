@@ -1,0 +1,31 @@
+﻿
+@{
+}
+@model IEnumerable<Student>
+<div class="container">
+    <div class="row p-4">  
+        <h1>THE STUDENTS</h1>
+    </div>
+    <div class="row p-4">  
+     <table >
+    <tr >
+        <th>student_id </th>
+        <th>student_name </th>
+        <th>student_age </th>
+        <th>student_semester </th>
+        <th>student_department </th>
+    </tr>
+    @foreach(Student s in Model)
+    {
+        <tr>
+        <td>@s.Id</td>
+        <td>@s.Name</td>
+        <td>@s.Age</td>
+        <td>@s.Semester</td>
+      </tr>
+    }
+
+   </table>
+    </div>
+</div>
+

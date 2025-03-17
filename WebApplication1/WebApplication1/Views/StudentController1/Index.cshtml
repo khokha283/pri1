@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Student
+<h1>THE STUDENTS</h1>
+<table>
+    <tr>
+        <th>student_id </th>
+        <th>student_name </th>
+        <th>student_age </th>
+        <th>student_semester </th>
+        <th>student_department </th>
+    </tr>
+    <tr>
+        <td>@Model.Id</td>
+        <td>@Model.Name</td>
+        <td>@Model.Age</td>
+        <td>@Model.Semester</td>
+    </tr>
+    
+</table>
